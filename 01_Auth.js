@@ -81,3 +81,8 @@ function debugXToken() {
   // access_token の先頭だけ（漏洩回避）
   if (token && token.access_token) Logger.log('access_token_prefix=' + token.access_token.slice(0, 8));
 }
+function resetAuth() {
+  var service = getXService();
+  service.reset();
+  Logger.log('トークンリセット完了！ 次にauthorizeX()を実行してね');
+}

@@ -1,0 +1,9 @@
+**/**
+!*.js
+!*.ts
+!appsscript.json
+.git/
+.gitignore
+node_modules/
+README.md
+00_Secrets.example.js
